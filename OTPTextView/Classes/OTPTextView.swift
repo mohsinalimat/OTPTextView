@@ -30,6 +30,14 @@ public class OTPTextView: UIView {
     public var underLineIndicator = UIView() // Small one
     public var UnderLineHighlight = UIView() // Big one
     
+    public var isPasswordProtected : Bool = false
+    {
+        didSet
+        {
+            refresh()
+        }
+    }
+    
     public enum indicatorStyleMode
     {
         case none
@@ -268,7 +276,7 @@ public class OTPTextView: UIView {
             txt.textAlignment = .center
             txt.font = UIFont.boldSystemFont(ofSize: fontSize)
             txt.textColor = txtColor
-            
+            txt.isSecureTextEntry = isPasswordProtected
             
             
         }
