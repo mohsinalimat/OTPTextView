@@ -1,0 +1,6 @@
+framework module OTPTextView {
+  umbrella header "OTPTextView-umbrella.h"
+
+  export *
+  module * { export * }
+}
