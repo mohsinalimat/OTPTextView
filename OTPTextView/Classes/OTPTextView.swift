@@ -214,7 +214,7 @@ public class OTPTextView: UIView {
     }
     
     
-    func AutoFillByFrameSize()
+   public func AutoFillByFrameSize()
     {
         for i in 0...TextFiledContainer.count - 1
         {
@@ -536,7 +536,7 @@ public class OTPTextView: UIView {
     }
     
     
-    func clearAll()
+   public func clearAll()
     {
         for txt in TextFiledContainer
         {
@@ -563,7 +563,7 @@ public class OTPTextView: UIView {
         setup()
     }
     
-    func onSuccess()
+ public func onSuccess()
     {
         
         for txt in TextFiledContainer
@@ -576,7 +576,7 @@ public class OTPTextView: UIView {
         }
     }
     
-    func flash(from:Int, to:Int,speed:Double)
+  public  func flash(from:Int, to:Int,speed:Double)
     {
         for i in from...to
         {
@@ -588,7 +588,7 @@ public class OTPTextView: UIView {
             }
         }
     }
-    func flashEmpties(from:Int, to:Int,speed:Double)
+   public func flashEmpties(from:Int, to:Int,speed:Double)
     {
         for i in from...to
         {
@@ -601,7 +601,7 @@ public class OTPTextView: UIView {
         }
     }
     
-    func flashAll(speed:Double)
+    public func flashAll(speed:Double)
     {
         for txt in TextFiledContainer
         {
