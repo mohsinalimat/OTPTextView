@@ -16,9 +16,7 @@ Open Wiki tap to see, you can use storyboard or implement it in your code
 
 **Simple Implementation**
 
-let myOTPTextView = OTPTextView(frame:CGRect(x: 10, y: 400, width: 300, height: 50))
- view.addSubview(myOTPTextView)
-print(myOTPTextView.getNumber())
+`let myOTPTextView = OTPTextView(frame:CGRect(x: 10, y: 400, width: 300, height: 50)) view.addSubview(myOTPTextView) print(myOTPTextView.getNumber())`
 
 ## Requirements
 
