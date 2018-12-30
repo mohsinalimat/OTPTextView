@@ -12,9 +12,7 @@ class ViewController: UIViewController,OTPTextViewDelegate {
     
     func OTPTextViewResult(number: String?) {
         
-        
-        
-        
+  
         if number != nil
         {
             let alert = UIAlertController(title: "Alert", message: number, preferredStyle: UIAlertControllerStyle.alert)
@@ -41,14 +39,22 @@ class ViewController: UIViewController,OTPTextViewDelegate {
         super.viewDidLoad()
         
         OTPTextVU.layer.cornerRadius = 10
-        
-        
         OTPTextVU.delegate = self
         
         OTPTextVU.indicatorStyle = .underline
         
         clearAllButton.StyleTheButton()
         showNumberButton.StyleTheButton()
+        
+        
+        /*
+
+         let myOTPTextView = OTPTextView(frame:CGRect(x: 10, y: 400, width: 300, height: 50))
+        view.addSubview(myOTPTextView)
+        print(myOTPTextView.getNumber())
+ 
+        */
+        
     }
     
     @IBAction func showCursor(_ sender: UISwitch) {

@@ -510,7 +510,7 @@ public class OTPTextView: UIView {
         
     }
     
-    func getNumber() -> String?
+   public func getNumber() -> String?
     {
         var number = ""
         for txt in TextFiledContainer
@@ -527,7 +527,7 @@ public class OTPTextView: UIView {
         }
         return number
     }
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         
         setup()
