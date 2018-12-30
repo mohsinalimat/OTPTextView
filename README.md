@@ -20,6 +20,8 @@ Open Wiki tap to see, you can use storyboard or implement it in your code
 
 ## Requirements
 
+UIKit
+
 ## Installation
 
 OTPTextView is available through [CocoaPods](https://cocoapods.org). To install
